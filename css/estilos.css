@@ -1,0 +1,39 @@
+body{
+
+    height: 100vh;
+    background-image: url("../img/mesa-fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.menu{
+    background-color: turquoise;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: whitesmoke;
+}
+
+.site-subtitle,
+.site-title {
+    text-align: center;
+    color: black;
+}
+
+
