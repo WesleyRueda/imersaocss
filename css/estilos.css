@@ -1,3 +1,7 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
     height: 100vh;
     margin: 0;
@@ -6,6 +10,7 @@ body{
 
 .imagem-fundo{
     height:100vh;
+    width: 100vw;
     background-image: url("../img/277.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,20 +18,24 @@ body{
 }
 
 .menu{
-    background-color: #fcf694;
+    background-color: rgb(56, 10, 24);
     position: absolute;
     top: 0%;
-    width: 100%;
-    height: 4%;
-    font-size: 18px;    
-    vertical-align: center;
+    width: 100vw;
+    height: 6vh;
+    font-size: 1.2em;
+    border-bottom: solid 2px rgb(255, 186, 172);
+    
 }
 
 .menu ul{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    margin: 0;
-    padding-top: 2.5px;
+    align-items: center;
+    font-weight: bolder;
 }
 
 .menu li{
@@ -34,20 +43,22 @@ body{
 }
 
 a{
-    color: black;
+    color: rgb(255, 186, 172);
     text-decoration: none;
 }
 
 a:hover{
-    color: #a82630;
-    ;
+    color: #fcf694;
+    border-bottom: solid 3px #fcf694;
+    border-radius: 10px;
 }
 
 .titulos{
     position: absolute;
-    top: 330px;
-    right: 570px;
-    width:350px;
+    top: 43vh;
+    right: 37.5vw;
+    width:25%;
+    padding: 0.7em;
     /* background-color: rgba(255, 186, 172, 0.4); */
     background-color: rgba(56, 10, 24, 0.8);
     border: solid 3px rgb(33, 10, 6);
@@ -59,6 +70,151 @@ a:hover{
     text-align: center;
     /* color: #42140C; */
     color: rgb(255, 186, 172);
+}
+
+.sobre{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(56, 10, 24);
+}
+
+@media(max-width: 1200px){
+    
+    .menu{
+        
+        width: 100vw;
+        height: 5vh;
+        font-size: 1.2em;
+    }
+    .menu ul{
+        padding-top: 0.4em;
+        height: inherit;
+        font-weight: bolder;
+    }
+
+    a:hover{
+        color: #fcf694;
+        border: none;
+    }
+
+    .imagem-fundo{
+        height:100vh;
+        width: 100vw;
+        background-image: url("../img/277.jpg");
+        background-repeat: no-repeat;
+        background-size: 200vh;
+        background-position: top;
+    }
+
+    .titulos{
+        position: absolute;
+        top: 47.5vh;
+        right: 32vw;
+        width:30vw;
+        padding: 0.7em;
+        /* background-color: rgba(255, 186, 172, 0.4); */
+        background-color: rgba(56, 10, 24, 0.8);
+        border: solid 3px rgb(33, 10, 6);
+        font-size: 0.7em;
+    }
+
+    .sobre{
+        position: absolute;
+        top: 100vh;
+    }
+}
+
+@media(max-width: 800px){
+    
+    .menu{
+        
+        width: 100vw;
+        height: 5vh;
+        font-size: 1em;
+    }
+    .menu ul{
+        padding-top: 0.4em;
+        height: inherit;
+        font-weight: bolder;
+    }
+
+    a:hover{
+        color: #fcf694;
+        border: none;
+    }
+
+    .imagem-fundo{
+        height:100vh;
+        width: 100vw;
+        background-image: url("../img/277.jpg");
+        background-repeat: no-repeat;
+        background-size: 140vh;
+        background-position: top;
+    }
+
+    .titulos{
+        position: absolute;
+        top: 31.5vh;
+        right: 30vw;
+        width:40vw;
+        padding: 0.7em;
+        /* background-color: rgba(255, 186, 172, 0.4); */
+        background-color: rgba(56, 10, 24, 0.8);
+        border: solid 3px rgb(33, 10, 6);
+        font-size: 0.6em;
+    }
+
+    .sobre{
+        position: absolute;
+        top: 70vh;
+    }
+}
+
+@media(max-width: 400px){
+    
+    .menu{
+        
+        width: 100vw;
+        height: 5vh;
+        font-size: 1em;
+    }
+    .menu ul{
+        padding-top: 0.4em;
+        height: inherit;
+        font-weight: bolder;
+    }
+
+    a:hover{
+        color: #fcf694;
+        border: none;
+    }
+
+    .imagem-fundo{
+        height:100vh;
+        width: 100vw;
+        background-image: url("../img/277.jpg");
+        background-repeat: no-repeat;
+        background-size: 100vh;
+        background-position: top;
+    }
+
+    .titulos{
+        position: absolute;
+        top: 22.5vh;
+        right: 25vw;
+        width:45vw;
+        /* background-color: rgba(255, 186, 172, 0.4); */
+        background-color: rgba(56, 10, 24, 0.8);
+        border: solid 3px rgb(33, 10, 6);
+        font-size: 0.5em;
+    }
+
+    .sobre{
+        position: absolute;
+        top: 60vh;
+    }
+
+
 }
 
 
