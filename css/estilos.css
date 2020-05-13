@@ -19,13 +19,13 @@ body{
 
 .menu{
     background-color: rgb(56, 10, 24);
-    position: absolute;
+    position: fixed;
     top: 0%;
     width: 100vw;
     height: 6vh;
     font-size: 1.2em;
     border-bottom: solid 2px rgb(255, 186, 172);
-    
+    z-index: 999;
 }
 
 .menu ul{
@@ -53,7 +53,7 @@ a:hover{
     border-radius: 10px;
 }
 
-.titulos{
+.titulos-principal{
     position: absolute;
     top: 43vh;
     right: 37.5vw;
@@ -72,11 +72,130 @@ a:hover{
     color: rgb(255, 186, 172);
 }
 
-.sobre{
-    height: 100vh;
+.perfil{
+    height: auto;
     width: 100vw;
     background-color: rgb(56, 10, 24);
 }
+
+.titulo-perfil{
+    padding: 0.5em;
+    text-align: center;
+    color: rgb(255, 186, 172);
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-style: normal;
+}
+
+.paragrafo-perfil, .lista-sobre{
+    font-size: 1.5em;
+    color: rgb(255, 186, 172);
+    text-align: left;
+    line-height: 2em;
+    margin: 0 0.5em 0 1em;
+}
+
+.lista-sobre{
+    width: 100vw;
+    margin-top: 1em;
+    margin-left: 2em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista-sobre>*{
+    flex: 500px;
+}
+
+.lista-sobre:nth-last-child(1){
+    padding-bottom: 1.5em;
+}
+
+.perfil figure{
+    text-align: center;
+}
+
+.paragrafo-perfil{
+    padding-top: 1em;
+}
+
+.imagem-perfil {
+    margin: 0.7em;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit:cover;
+    object-position: center;
+}
+/* $$$$$$$$$$$$$$$$$$$   Projetos $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.projetos{
+    height: auto;
+    width: 100vw;
+    background-color: rgb(255, 186, 172);
+}
+
+.titulo-projetos{
+    padding: 0.5em;
+    text-align: center;
+    color: rgb(56, 10, 24);
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-style: normal;
+    padding-bottom: 2em;
+}
+
+.projetos .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 48px - 8em);
+    gap: 8em;
+}
+
+.projetos figure{
+    text-align: center;
+}
+
+.projetos figcaption{
+    text-align: center;
+    color: rgb(56, 10, 24);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.imagem-projeto{
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
+    object-fit: left bottom;
+}
+
+.grid:nth-last-child(1){
+    padding-bottom: 1.5em;
+}
+
+/******************************* Contato  ********************************* */
+
+.contato{
+
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(197,89,61);
+}
+
+.contato-titulo{
+    padding: 0.5em;
+    text-align: center;
+    color: rgb(255, 186, 172);
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-style: normal;
+    padding-bottom: 2em;
+}
+
+/* ------------------------MEDIA QUERIES ---------------------------------------*/
 
 @media(max-width: 1200px){
     
@@ -118,7 +237,7 @@ a:hover{
         font-size: 0.7em;
     }
 
-    .sobre{
+    .perfil{
         position: absolute;
         top: 100vh;
     }
@@ -164,7 +283,7 @@ a:hover{
         font-size: 0.6em;
     }
 
-    .sobre{
+    .perfil{
         position: absolute;
         top: 70vh;
     }
@@ -209,7 +328,7 @@ a:hover{
         font-size: 0.5em;
     }
 
-    .sobre{
+    .perfil{
         position: absolute;
         top: 60vh;
     }
