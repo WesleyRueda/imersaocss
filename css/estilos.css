@@ -207,6 +207,7 @@ a:hover{
     }
     .menu ul{
         padding-top: 0.4em;
+        padding-bottom: 0.4em;
         height: inherit;
         font-weight: bolder;
     }
@@ -217,44 +218,49 @@ a:hover{
     }
 
     .imagem-fundo{
-        height:100vh;
         width: 100vw;
         background-image: url("../img/277.jpg");
         background-repeat: no-repeat;
-        background-size: 200vh;
+        background-size: cover;
         background-position: top;
     }
 
-    .titulos{
+    .titulos-principal{
         position: absolute;
-        top: 47.5vh;
+        top: 35.5vh;
         right: 32vw;
         width:30vw;
         padding: 0.7em;
         /* background-color: rgba(255, 186, 172, 0.4); */
         background-color: rgba(56, 10, 24, 0.8);
         border: solid 3px rgb(33, 10, 6);
-        font-size: 0.7em;
+        font-size: 1em;
     }
 
     .perfil{
-        position: absolute;
+        /* position: absolute; */
         top: 100vh;
     }
+
+    .lista-perfil{
+        width: 25vw;
+    }
 }
 
-@media(max-width: 800px){
+@media(max-width: 1035px){
     
     .menu{
         
         width: 100vw;
         height: 5vh;
-        font-size: 1em;
+        font-size: 1.2em;
+
     }
     .menu ul{
         padding-top: 0.4em;
         height: inherit;
         font-weight: bolder;
+        padding-bottom: 0.4em;
     }
 
     a:hover{
@@ -267,59 +273,79 @@ a:hover{
         width: 100vw;
         background-image: url("../img/277.jpg");
         background-repeat: no-repeat;
-        background-size: 140vh;
-        background-position: top;
-    }
-
-    .titulos{
-        position: absolute;
-        top: 31.5vh;
-        right: 30vw;
-        width:40vw;
-        padding: 0.7em;
-        /* background-color: rgba(255, 186, 172, 0.4); */
-        background-color: rgba(56, 10, 24, 0.8);
-        border: solid 3px rgb(33, 10, 6);
-        font-size: 0.6em;
-    }
-
-    .perfil{
-        position: absolute;
-        top: 70vh;
-    }
-}
-
-@media(max-width: 400px){
-    
-    .menu{
-        
-        width: 100vw;
-        height: 5vh;
-        font-size: 1em;
-    }
-    .menu ul{
-        padding-top: 0.4em;
-        height: inherit;
-        font-weight: bolder;
-    }
-
-    a:hover{
-        color: #fcf694;
-        border: none;
-    }
-
-    .imagem-fundo{
-        height:100vh;
-        width: 100vw;
-        background-image: url("../img/277.jpg");
-        background-repeat: no-repeat;
-        background-size: 100vh;
+        background-size: cover;
         background-position: top;
     }
 
     .titulos-principal{
         position: absolute;
-        top: 22.5vh;
+        top: 31.5vh;
+        right: 29.5vw;
+        width:36%;
+        padding: 0.7em;
+        /* background-color: rgba(255, 186, 172, 0.4); */
+        background-color: rgba(56, 10, 24, 0.8);
+        border: solid 3px rgb(33, 10, 6);
+        font-size: 0.8em;
+    }
+
+    .perfil{
+        /* position: absolute; */
+        top: 70vh;
+    }
+
+    .lista-perfil{
+        width: 25vw;
+    }
+
+
+    .projetos .grid{
+        grid-template-columns: repeat(2, 240px);
+        gap: 7em;
+        height: auto;
+    }
+
+    .titulo-projetos{
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
+
+    .ultima-fig-projeto{
+        padding-bottom: 1em;
+    }
+}
+
+@media(max-width: 600px){
+    
+    .menu{
+        
+        width: 100vw;
+        height: 5vh;
+        font-size: 1em;
+    }
+    .menu ul{
+        padding-top: 0.4em;
+        height: inherit;
+        font-weight: bolder;
+    }
+
+    a:hover{
+        color: #fcf694;
+        border: none;
+    }
+
+    .imagem-fundo{
+        height:100vh;
+        width: 100vw;
+        background-image: url("../img/277.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    .titulos-principal{
+        position: absolute;
+        top: 31.5vh;
         right: 19vw;
         width: 55%;
         padding: 1em;
@@ -330,7 +356,7 @@ a:hover{
     }
 
     .perfil{
-        position: absolute;
+        /* position: absolute; */
         top: 60vh;
     }
 
@@ -344,7 +370,7 @@ a:hover{
     }
 
     .paragrafo-perfil, .lista-perfil{
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .lista-perfil{
@@ -357,6 +383,17 @@ a:hover{
         height: auto;
     }
 
+    .titulo-projetos{
+        padding-bottom: 1em;
+    }
+
+    .grid figcaption{
+        padding-bottom: 2em;
+    }
+
+    .grid:nth-last-child(1){
+        padding-bottom: 0;
+    }
 
 }
 
