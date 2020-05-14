@@ -42,15 +42,18 @@ body{
     list-style: none;
 }
 
-a{
+.menu a{
     color: rgb(255, 186, 172);
     text-decoration: none;
+    padding: 12px 30px;
 }
 
-a:hover{
-    color: #fcf694;
-    border-bottom: solid 3px #fcf694;
-    border-radius: 10px;
+.menu a:hover{
+    color: rgb(56, 10, 24);
+    background-color: #fcf694;
+    transition: 500ms;
+    /* border-bottom: solid 3px #fcf694; */
+    
 }
 
 .titulos-principal{
@@ -96,7 +99,7 @@ a:hover{
 }
 
 .lista-perfil{
-    width: 100vw;
+    width: 86vw;
     margin-top: 1em;
     margin-left: 2em;
     display: flex;
@@ -170,6 +173,13 @@ a:hover{
     width: 240px;
     object-fit: cover;
     object-fit: left bottom;
+    transition: 500ms;
+    box-shadow: 9px 9px 9px rgba(50, 50, 50, 0.77);
+}
+
+.imagem-projeto:hover{
+    transform: scale(1.2);
+    filter: grayscale(100%);
 }
 
 .grid:nth-last-child(1){
@@ -212,9 +222,8 @@ a:hover{
         font-weight: bolder;
     }
 
-    a:hover{
-        color: #fcf694;
-        border: none;
+    .menu a{
+        padding: 8px 30px;
     }
 
     .imagem-fundo{
@@ -227,9 +236,9 @@ a:hover{
 
     .titulos-principal{
         position: absolute;
-        top: 35.5vh;
-        right: 32vw;
-        width:30vw;
+        top: 31.5vh;
+        right: 34vw;
+        width:32vw;
         padding: 0.7em;
         /* background-color: rgba(255, 186, 172, 0.4); */
         background-color: rgba(56, 10, 24, 0.8);
@@ -263,10 +272,10 @@ a:hover{
         padding-bottom: 0.4em;
     }
 
-    a:hover{
+    /* a:hover{
         color: #fcf694;
         border: none;
-    }
+    } */
 
     .imagem-fundo{
         height:100vh;
@@ -281,7 +290,7 @@ a:hover{
         position: absolute;
         top: 31.5vh;
         right: 29.5vw;
-        width:36%;
+        width:44vw;
         padding: 0.7em;
         /* background-color: rgba(255, 186, 172, 0.4); */
         background-color: rgba(56, 10, 24, 0.8);
@@ -329,9 +338,8 @@ a:hover{
         font-weight: bolder;
     }
 
-    a:hover{
-        color: #fcf694;
-        border: none;
+    .menu a{
+        padding: 10px;
     }
 
     .imagem-fundo{
@@ -346,8 +354,8 @@ a:hover{
     .titulos-principal{
         position: absolute;
         top: 31.5vh;
-        right: 19vw;
-        width: 55%;
+        right: 18vw;
+        width: 63vw;
         padding: 1em;
         /* background-color: rgba(255, 186, 172, 0.4); */
         background-color: rgba(56, 10, 24, 0.8);
