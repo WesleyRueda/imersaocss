@@ -71,7 +71,7 @@ a:hover{
     /* color: #42140C; */
     color: rgb(255, 186, 172);
 }
-
+/* @@@@@@@@@@@@@@@@@@@@@@@ PERFIL @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 .perfil{
     height: auto;
     width: 100vw;
@@ -87,7 +87,7 @@ a:hover{
     font-style: normal;
 }
 
-.paragrafo-perfil, .lista-sobre{
+.paragrafo-perfil, .lista-perfil{
     font-size: 1.5em;
     color: rgb(255, 186, 172);
     text-align: left;
@@ -95,7 +95,7 @@ a:hover{
     margin: 0 0.5em 0 1em;
 }
 
-.lista-sobre{
+.lista-perfil{
     width: 100vw;
     margin-top: 1em;
     margin-left: 2em;
@@ -103,11 +103,11 @@ a:hover{
     flex-wrap: wrap;
 }
 
-.lista-sobre>*{
+.lista-perfil>*{
     flex: 500px;
 }
 
-.lista-sobre:nth-last-child(1){
+.lista-perfil:nth-last-child(1){
     padding-bottom: 1.5em;
 }
 
@@ -317,20 +317,44 @@ a:hover{
         background-position: top;
     }
 
-    .titulos{
+    .titulos-principal{
         position: absolute;
         top: 22.5vh;
-        right: 25vw;
-        width:45vw;
+        right: 19vw;
+        width: 55%;
+        padding: 1em;
         /* background-color: rgba(255, 186, 172, 0.4); */
         background-color: rgba(56, 10, 24, 0.8);
         border: solid 3px rgb(33, 10, 6);
-        font-size: 0.5em;
+        font-size: 0.7em;
     }
 
     .perfil{
         position: absolute;
         top: 60vh;
+    }
+
+    .titulo-perfil{
+        font-size: 2em;
+    }
+
+    .imagem-perfil{
+        height: 100px;
+        width: 100px;
+    }
+
+    .paragrafo-perfil, .lista-perfil{
+        font-size: 1em;
+    }
+
+    .lista-perfil{
+        width: 25vw;
+    }
+    
+    .projetos .grid{
+        display: block;
+        gap: 2em;
+        height: auto;
     }
 
 
