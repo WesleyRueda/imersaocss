@@ -235,7 +235,7 @@ body{
     }
 
     .menu a{
-        padding: 22px;
+        padding: 24px;
     }
 }
 
@@ -249,7 +249,7 @@ body{
     }
 
     .menu a{
-        padding: 20px;
+        padding: 22px;
     }
 }
 
@@ -263,7 +263,7 @@ body{
     }
 
     .menu a{
-        padding: 15px;
+        padding: 13px;
     }
 }
 
@@ -283,7 +283,7 @@ body{
     }
 
     .menu a{
-        padding: 8px;
+        padding: 7px;
     }
 
     .perfil{
@@ -355,7 +355,7 @@ body{
     }
 
     .menu a{
-        padding: 11px;
+        padding: 9px;
     }
 
     .perfil{
@@ -416,6 +416,7 @@ body{
         font-size: 1.0em;
         letter-spacing: 2.5px;
     }
+
 }
 
 
