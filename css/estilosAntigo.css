@@ -1,0 +1,210 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.imagem-fundo{
+    height:100vh;
+    width: 100vw;
+    background-image: url("../img/277.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1.0px);
+}
+
+.menu{
+    background-color: rgb(56, 10, 24);
+    position: fixed;
+    top: 0%;
+    width: 100vw;
+    height: 6vh;
+    font-size: 1.2em;
+    border-bottom: solid 2px rgb(255, 186, 172);
+    z-index: 999;
+}
+
+.menu ul{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    color: rgb(255, 186, 172);
+    text-decoration: none;
+    padding: 12px 30px;
+}
+
+.menu a:hover{
+    color: rgb(56, 10, 24);
+    background-color: #fcf694;
+    transition: 500ms;
+    /* border-bottom: solid 3px #fcf694; */
+    
+}
+
+.titulos-principal{
+    position: absolute;
+    top: 43vh;
+    right: 37.5vw;
+    width:25%;
+    padding: 0.7em;
+    /* background-color: rgba(255, 186, 172, 0.4); */
+    background-color: rgba(56, 10, 24, 0.8);
+    border: solid 3px rgb(33, 10, 6);
+}
+
+.site-subtitle,
+.site-title {
+    padding: 3px;
+    text-align: center;
+    /* color: #42140C; */
+    color: rgb(255, 186, 172);
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@ PERFIL @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.perfil{
+    height: auto;
+    width: 100vw;
+    background-color: rgb(56, 10, 24);
+}
+
+.titulo-perfil{
+    padding: 0.5em;
+    text-align: center;
+    color: rgb(255, 186, 172);
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-style: normal;
+}
+
+.paragrafo-perfil, .lista-perfil{
+    font-size: 1.5em;
+    color: rgb(255, 186, 172);
+    text-align: left;
+    line-height: 2em;
+    margin: 0 0.5em 0 1em;
+}
+
+.lista-perfil{
+    width: 86vw;
+    margin-top: 1em;
+    margin-left: 2em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista-perfil>*{
+    flex: 500px;
+}
+
+.lista-perfil:nth-last-child(1){
+    padding-bottom: 1.5em;
+}
+
+.perfil figure{
+    text-align: center;
+}
+
+.paragrafo-perfil{
+    padding-top: 1em;
+}
+
+.imagem-perfil {
+    margin: 0.7em;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit:cover;
+    object-position: center;
+}
+/* $$$$$$$$$$$$$$$$$$$   Projetos $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.projetos{
+    height: auto;
+    width: 100vw;
+    background-color: rgb(255, 186, 172);
+}
+
+.titulo-projetos{
+    padding: 0.5em;
+    text-align: center;
+    color: rgb(56, 10, 24);
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-style: normal;
+    padding-bottom: 2em;
+}
+
+.projetos .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 48px - 8em);
+    gap: 8em;
+}
+
+.projetos figure{
+    text-align: center;
+}
+
+.projetos figcaption{
+    text-align: center;
+    color: rgb(56, 10, 24);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.imagem-projeto{
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
+    object-fit: left bottom;
+    transition: 500ms;
+    box-shadow: 9px 9px 9px rgba(50, 50, 50, 0.77);
+}
+
+.imagem-projeto:hover{
+    transform: scale(1.2);
+    filter: grayscale(100%);
+}
+
+.grid:nth-last-child(1){
+    padding-bottom: 1.5em;
+}
+
+/******************************* Contato  ********************************* */
+
+.contato{
+
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(197,89,61);
+}
+
+.contato-titulo{
+    padding: 0.5em;
+    text-align: center;
+    color: rgb(255, 186, 172);
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-style: normal;
+    padding-bottom: 2em;
+}
+
+
+
+

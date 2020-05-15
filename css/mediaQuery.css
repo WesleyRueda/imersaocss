@@ -1,0 +1,199 @@
+/* ------------------------MEDIA QUERIES ---------------------------------------*/
+
+@media(max-width: 1200px){
+    
+    .menu{
+        
+        width: 100vw;
+        height: 5vh;
+        font-size: 1.2em;
+    }
+    .menu ul{
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+        height: inherit;
+        font-weight: bolder;
+    }
+
+    .menu a{
+        padding: 8px 30px;
+    }
+
+    .imagem-fundo{
+        width: 100vw;
+        background-image: url("../img/277.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    .titulos-principal{
+        position: absolute;
+        top: 31.5vh;
+        right: 34vw;
+        width:32vw;
+        padding: 0.7em;
+        /* background-color: rgba(255, 186, 172, 0.4); */
+        background-color: rgba(56, 10, 24, 0.8);
+        border: solid 3px rgb(33, 10, 6);
+        font-size: 1em;
+    }
+
+    .perfil{
+        /* position: absolute; */
+        top: 100vh;
+    }
+
+    .lista-perfil{
+        width: 25vw;
+    }
+}
+
+@media(max-width: 1035px){
+    
+    .menu{
+        
+        width: 100vw;
+        height: 5vh;
+        font-size: 1.2em;
+
+    }
+    .menu ul{
+        padding-top: 0.4em;
+        height: inherit;
+        font-weight: bolder;
+        padding-bottom: 0.4em;
+    }
+
+    /* a:hover{
+        color: #fcf694;
+        border: none;
+    } */
+
+    .imagem-fundo{
+        height:100vh;
+        width: 100vw;
+        background-image: url("../img/277.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    .titulos-principal{
+        position: absolute;
+        top: 31.5vh;
+        right: 29.5vw;
+        width:44vw;
+        padding: 0.7em;
+        /* background-color: rgba(255, 186, 172, 0.4); */
+        background-color: rgba(56, 10, 24, 0.8);
+        border: solid 3px rgb(33, 10, 6);
+        font-size: 0.8em;
+    }
+
+    .perfil{
+        /* position: absolute; */
+        top: 70vh;
+    }
+
+    .lista-perfil{
+        width: 25vw;
+    }
+
+
+    .projetos .grid{
+        grid-template-columns: repeat(2, 240px);
+        gap: 7em;
+        height: auto;
+    }
+
+    .titulo-projetos{
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
+
+    .ultima-fig-projeto{
+        padding-bottom: 1em;
+    }
+}
+
+@media(max-width: 600px){
+    
+    .menu{
+        
+        width: 100vw;
+        height: 5vh;
+        font-size: 1em;
+    }
+    .menu ul{
+        padding-top: 0.4em;
+        height: inherit;
+        font-weight: bolder;
+    }
+
+    .menu a{
+        padding: 10px;
+    }
+
+    .imagem-fundo{
+        height:100vh;
+        width: 100vw;
+        background-image: url("../img/277.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    .titulos-principal{
+        position: absolute;
+        top: 31.5vh;
+        right: 18vw;
+        width: 63vw;
+        padding: 1em;
+        /* background-color: rgba(255, 186, 172, 0.4); */
+        background-color: rgba(56, 10, 24, 0.8);
+        border: solid 3px rgb(33, 10, 6);
+        font-size: 0.7em;
+    }
+
+    .perfil{
+        /* position: absolute; */
+        top: 60vh;
+    }
+
+    .titulo-perfil{
+        font-size: 2em;
+    }
+
+    .imagem-perfil{
+        height: 100px;
+        width: 100px;
+    }
+
+    .paragrafo-perfil, .lista-perfil{
+        font-size: 1.2em;
+    }
+
+    .lista-perfil{
+        width: 25vw;
+    }
+    
+    .projetos .grid{
+        display: block;
+        gap: 2em;
+        height: auto;
+    }
+
+    .titulo-projetos{
+        padding-bottom: 1em;
+    }
+
+    .grid figcaption{
+        padding-bottom: 2em;
+    }
+
+    .grid:nth-last-child(1){
+        padding-bottom: 0;
+    }
+
+}

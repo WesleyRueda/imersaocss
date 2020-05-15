@@ -1,0 +1,402 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.imagem-fundo{
+    height:100vh;
+    width: 100vw;
+    background-image: url("../img/fundoVermelho.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu{
+    background-color: rgb(41, 13, 13);
+    position: fixed;
+    top: 0%;
+    width: 100vw;
+    height: 6vh;
+    font-size: 1.2em;
+    border-bottom: solid 2px whitesmoke;
+    z-index: 999;
+}
+
+.menu ul{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0.6em 1em;
+}
+
+.menu a:hover{
+    color: #c31f1e;
+    background-color: whitesmoke;
+    transition: 500ms;    
+}
+
+.titulos-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 30vh;
+    width: 100vw;
+    height: 40vh;
+    background-color: whitesmoke;
+    font-family:'Montserrat', sans-serif;
+}
+
+.site-subtitle,
+.site-title {
+
+    text-align: right;
+    color: #c31f1e;
+}
+
+.site-title{
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    font-size: 4.5em;
+    letter-spacing: 5px;
+}
+
+.site-subtitle{
+    padding-right: 1.7em;
+    padding-left: 1.7em;
+    letter-spacing: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@ PERFIL @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.perfil{
+    height: auto;
+    width: 100vw;
+    background-color: rgb(17, 9, 9);
+}
+
+.titulo-perfil{
+    padding: 0.5em;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-style: normal;
+}
+
+.paragrafo-perfil, .lista-perfil{
+    font-size: 1.4em;
+    color: whitesmoke;
+    text-align: left;
+    line-height: 2em;
+    margin: 0 0.5em 0 1em;
+}
+
+.lista-perfil{
+    width: 86vw;
+    margin-top: 1em;
+    margin-left: 2em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista-perfil>*{
+    flex: 555px;
+}
+
+.lista-perfil:nth-last-child(1){
+    padding-bottom: 1.5em;
+}
+
+.perfil figure{
+    text-align: center;
+}
+
+.paragrafo-perfil{
+    padding-top: 1em;
+}
+
+.imagem-perfil {
+    margin: 0.7em;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit:cover;
+    object-position: center;
+}
+/* $$$$$$$$$$$$$$$$$$$   Projetos $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.projetos{
+    height: auto;
+    width: 100vw;
+    background-color: whitesmoke;
+}
+
+.titulo-projetos{
+    padding: 1em;
+    text-align: center;
+    color: rgb(17, 9, 9);
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-style: normal;
+}
+
+.projetos .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 25vw);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 48px - 8em);
+    grid-column-gap: 5em;
+    grid-row-gap: 3em ;
+
+}
+
+.projetos figure{
+    text-align: center;
+}
+
+.projetos figcaption{
+    text-align: center;
+    color: rgb(17, 9, 9);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.imagem-projeto{
+    height: 30vh;
+    width: 20vw;
+    object-fit: cover;
+    object-position: center top;
+    transition: 500ms;
+    box-shadow: 9px 9px 9px rgba(50, 50, 50, 0.77);
+    filter: grayscale(100%);
+    margin-bottom: 1.2em;
+
+}
+
+.imagem-projeto:hover{
+    transform: scale(1.2);
+    filter: none;
+}
+
+.grid:nth-last-child(1){
+    padding-bottom: 4em;
+}
+
+/******************************* Contato  ********************************* */
+
+.contato{
+
+    height: 100vh;
+    width: 100vw;
+    background-color: #c31f1e;
+}
+
+.contato-titulo{
+    padding: 0.5em;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-style: normal;
+    padding-bottom: 2em;
+}
+
+/* ------------------------MEDIA QUERIES --------------------------------------- */
+
+@media(min-width: 1920px){
+    .menu{
+        font-size: 1.9em;
+    }
+
+    .paragrafo-perfil{
+        font-size: 2.3em;
+    }
+}
+
+@media(min-width: 1680px){
+    .menu{
+        font-size: 1.7em;
+    }
+
+    .paragrafo-perfil{
+        font-size: 2em;
+    }
+}
+
+@media(min-width: 1440px){
+    .menu{
+        font-size: 1.3em;
+    }
+
+    .paragrafo-perfil{
+        font-size: 1.7em;
+    }
+}
+
+@media(max-width: 1200px){
+    
+    .menu{
+        
+        width: 100vw;
+        height: 5vh;
+        font-size: 1.2em;
+    }
+    .menu ul{
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+        height: inherit;
+        font-weight: bolder;
+    }
+
+    .perfil{
+        top: 100vh;
+    }
+
+    .lista-perfil{
+        width: 25vw;
+    }
+}
+
+@media(max-width: 1035px){
+    
+    .menu{
+        
+        width: 100vw;
+        height: 5vh;
+        font-size: 1.2em;
+
+    }
+    .menu ul{
+        padding-top: 0.4em;
+        height: inherit;
+        font-weight: bolder;
+        padding-bottom: 0.4em;
+    }
+
+    .perfil{
+        top: 70vh;
+    }
+
+    .lista-perfil{
+        width: 25vw;
+    }
+
+    .projetos .grid{
+        grid-template-columns: repeat(2, 45vw);
+        gap: 1em;
+        height: auto;
+    }
+
+    .imagem-projeto{
+        height: 35vh;
+        width: 35vw;
+    }
+
+    .titulo-projetos{
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
+
+    .ultima-fig-projeto{
+        padding-bottom: 1em;
+    }
+
+}
+
+@media(max-width: 725px){
+    
+    .menu{
+        
+        width: 100vw;
+        height: 5vh;
+        font-size: 1.1em;
+    }
+    .menu ul{
+        padding-top: 0.4em;
+        height: inherit;
+        font-weight: bolder;
+    }
+
+    .perfil{
+        top: 60vh;
+    }
+
+    .titulo-perfil{
+        font-size: 2em;
+    }
+
+    .imagem-perfil{
+        height: 100px;
+        width: 100px;
+    }
+
+    .paragrafo-perfil, .lista-perfil{
+        font-size: 1.1em;
+    }
+
+    .lista-perfil{
+        width: 25vw;
+    }
+    
+    .projetos .grid{
+        gap: 2em;
+        height: auto;
+    }
+
+    .titulo-projetos{
+        padding-bottom: 1em;
+    }
+
+    .grid figcaption{
+        padding-bottom: 2em;
+    }
+
+    .grid:nth-last-child(1){
+        padding-bottom: 0;
+    }
+
+    .projetos .grid{
+        grid-template-columns: repeat(1, 240px);
+        height: auto;
+        }
+
+    .imagem-projeto{
+        height: 35vh;
+        width: 240px;
+        } 
+    }
+
+    @media(max-width: 553px){
+    .site-title{
+        font-size: 3.5em;
+    }
+
+    .site-subtitle{
+        font-size: 1.0em;
+        letter-spacing: 2.5px;
+    }
+}
+
+
