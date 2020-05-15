@@ -153,7 +153,7 @@ body{
 }
 
 .titulo-projetos{
-    padding: 0.5em;
+    padding: 1em;
     text-align: center;
     color: rgb(17, 9, 9);
     font-size: 3em;
@@ -163,11 +163,11 @@ body{
 
 .projetos .grid{
     display: grid;
-    grid-template-columns: repeat(3, 260px);
+    grid-template-columns: repeat(3, 25vw);
     align-content: center;
     justify-content: center;
     height: calc(100vh - 48px - 8em);
-    grid-column-gap: 12em;
+    grid-column-gap: 5em;
     grid-row-gap: 3em ;
 
 }
@@ -184,13 +184,14 @@ body{
 }
 
 .imagem-projeto{
-    height: 180px;
-    width: 240px;
+    height: 30vh;
+    width: 20vw;
     object-fit: cover;
-    object-fit: left bottom;
+    object-position: center top;
     transition: 500ms;
     box-shadow: 9px 9px 9px rgba(50, 50, 50, 0.77);
     filter: grayscale(100%);
+    margin-bottom: 1.2em;
 
 }
 
@@ -200,7 +201,7 @@ body{
 }
 
 .grid:nth-last-child(1){
-    padding-bottom: 1.5em;
+    padding-bottom: 4em;
 }
 
 /******************************* Contato  ********************************* */
@@ -239,9 +240,9 @@ body{
         font-weight: bolder;
     }
 
-    .menu a{
+    /* .menu a{
         padding: 8px 30px;
-    }
+    } */
 
     .perfil{
         top: 100vh;
@@ -277,9 +278,14 @@ body{
     }
 
     .projetos .grid{
-        grid-template-columns: repeat(2, 240px);
-        gap: 7em;
+        grid-template-columns: repeat(2, 45vw);
+        gap: 1em;
         height: auto;
+    }
+
+    .imagem-projeto{
+        height: 35vh;
+        width: 35vw;
     }
 
     .titulo-projetos{
@@ -300,7 +306,7 @@ body{
         
         width: 100vw;
         height: 5vh;
-        font-size: 1em;
+        font-size: 1.1em;
     }
     .menu ul{
         padding-top: 0.4em;
@@ -308,9 +314,9 @@ body{
         font-weight: bolder;
     }
 
-    .menu a{
+    /* .menu a{
         padding: 10px;
-    }
+    } */
 
     .perfil{
         top: 60vh;
@@ -334,7 +340,6 @@ body{
     }
     
     .projetos .grid{
-        display: block;
         gap: 2em;
         height: auto;
     }
@@ -351,15 +356,26 @@ body{
         padding-bottom: 0;
     }
 
-    @media(max-width: 553px){
-        .site-title{
-        font-size: 3.8em;
+    .projetos .grid{
+        grid-template-columns: repeat(1, 240px);
+        height: auto;
         }
 
-    .site-subtitle{
-        font-size: 1.1em;
-        letter-spacing: 2.5px;
-        }
+    .imagem-projeto{
+        height: 35vh;
+        width: 240px;
+        } 
     }
 
+    @media(max-width: 553px){
+    .site-title{
+        font-size: 3.5em;
+    }
+
+    .site-subtitle{
+        font-size: 1.0em;
+        letter-spacing: 2.5px;
+    }
 }
+
+
