@@ -44,7 +44,7 @@ body{
 .menu a{
     color: whitesmoke;
     text-decoration: none;
-    padding: 12px 30px;
+    padding: 0.6em 1em;
 }
 
 .menu a:hover{
@@ -121,7 +121,7 @@ body{
 }
 
 .lista-perfil>*{
-    flex: 500px;
+    flex: 555px;
 }
 
 .lista-perfil:nth-last-child(1){
@@ -159,7 +159,6 @@ body{
     font-size: 3em;
     letter-spacing: 5px;
     font-style: normal;
-    padding-bottom: 2em;
 }
 
 .projetos .grid{
@@ -168,7 +167,9 @@ body{
     align-content: center;
     justify-content: center;
     height: calc(100vh - 48px - 8em);
-    gap: 8em;
+    grid-column-gap: 12em;
+    grid-row-gap: 3em ;
+
 }
 
 .projetos figure{
