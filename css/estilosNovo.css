@@ -233,6 +233,10 @@ body{
     .paragrafo-perfil{
         font-size: 2.3em;
     }
+
+    .menu a{
+        padding: 22px;
+    }
 }
 
 @media(min-width: 1680px){
@@ -243,6 +247,10 @@ body{
     .paragrafo-perfil{
         font-size: 2em;
     }
+
+    .menu a{
+        padding: 20px;
+    }
 }
 
 @media(min-width: 1440px){
@@ -252,6 +260,10 @@ body{
 
     .paragrafo-perfil{
         font-size: 1.7em;
+    }
+
+    .menu a{
+        padding: 15px;
     }
 }
 
