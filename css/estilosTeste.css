@@ -54,6 +54,9 @@ body{
 }
 
 .titulos-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
     top: 30vh;
     width: 100vw;
@@ -64,19 +67,21 @@ body{
 
 .site-subtitle,
 .site-title {
+
     text-align: right;
     color: #c31f1e;
 }
 
 .site-title{
-    padding-top: 1.2em;
-    padding-right: 0.3em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
     font-size: 4.5em;
     letter-spacing: 5px;
 }
 
 .site-subtitle{
-    padding-right: 1em;
+    padding-right: 1.7em;
+    padding-left: 1.7em;
     letter-spacing: 5px;
     font-family: "Montserrat", sans-serif;
     font-weight: lighter;
@@ -306,15 +311,6 @@ body{
         padding: 10px;
     }
 
-    .site-title{
-        font-size: 4em;
-    }
-
-    .site-subtitle{
-        font-size: 1em;
-        letter-spacing: 2.5px;
-    }
-
     .perfil{
         top: 60vh;
     }
@@ -352,6 +348,17 @@ body{
 
     .grid:nth-last-child(1){
         padding-bottom: 0;
+    }
+
+    @media(max-width: 553px){
+        .site-title{
+        font-size: 3.8em;
+        }
+
+    .site-subtitle{
+        font-size: 1.1em;
+        letter-spacing: 2.5px;
+        }
     }
 
 }
