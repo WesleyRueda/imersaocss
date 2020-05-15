@@ -44,7 +44,7 @@ body{
 .menu a{
     color: whitesmoke;
     text-decoration: none;
-    padding: 0.6em 1em;
+    padding: 13px;
 }
 
 .menu a:hover{
@@ -270,6 +270,10 @@ body{
         font-weight: bolder;
     }
 
+    .menu a{
+        padding: 8px;
+    }
+
     .perfil{
         top: 100vh;
     }
@@ -328,15 +332,18 @@ body{
 @media(max-width: 725px){
     
     .menu{
-        
         width: 100vw;
         height: 5vh;
-        font-size: 1.1em;
+        font-size: 0.9em;
     }
     .menu ul{
         padding-top: 0.4em;
         height: inherit;
         font-weight: bolder;
+    }
+
+    .menu a{
+        padding: 11px;
     }
 
     .perfil{
