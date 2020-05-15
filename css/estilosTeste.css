@@ -1,0 +1,448 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.imagem-fundo{
+    height:100vh;
+    width: 100vw;
+    background-image: url("../img/fundoVermelho.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1.0px);
+}
+
+.menu{
+    background-color: rgb(41, 13, 13);
+    position: fixed;
+    top: 0%;
+    width: 100vw;
+    height: 6vh;
+    font-size: 1.2em;
+    border-bottom: solid 2px whitesmoke;
+    z-index: 999;
+}
+
+.menu ul{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 12px 30px;
+}
+
+.menu a:hover{
+    color: #c31f1e;
+    background-color: whitesmoke;
+    transition: 500ms;
+    /* border-bottom: solid 3px #fcf694; */
+    
+}
+
+.titulos-principal{
+    position: absolute;
+    top: 30vh;
+    left: -10vw;
+    height: 40vh;
+    width:65vw;
+    padding: 0.7em;
+    /* background-color: rgba(255, 186, 172, 0.4); */
+    background-color: whitesmoke;
+    font-family:'Montserrat', sans-serif;
+}
+
+.site-subtitle,
+.site-title {
+    text-align: right;
+    /* color: #42140C; */
+    color: #c31f1e;
+}
+
+.site-title{
+    padding-top: 1.2em;
+    padding-right: 0.3em;
+    font-size: 4.5em;
+    letter-spacing: 5px;
+}
+
+.site-subtitle{
+    padding-right: 1em;
+    letter-spacing: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@ PERFIL @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.perfil{
+    height: auto;
+    width: 100vw;
+    background-color: rgb(17, 9, 9);
+}
+
+.titulo-perfil{
+    padding: 0.5em;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-style: normal;
+}
+
+.paragrafo-perfil, .lista-perfil{
+    font-size: 1.4em;
+    color: whitesmoke;
+    text-align: left;
+    line-height: 2em;
+    margin: 0 0.5em 0 1em;
+}
+
+.lista-perfil{
+    width: 86vw;
+    margin-top: 1em;
+    margin-left: 2em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista-perfil>*{
+    flex: 500px;
+}
+
+.lista-perfil:nth-last-child(1){
+    padding-bottom: 1.5em;
+}
+
+.perfil figure{
+    text-align: center;
+}
+
+.paragrafo-perfil{
+    padding-top: 1em;
+}
+
+.imagem-perfil {
+    margin: 0.7em;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit:cover;
+    object-position: center;
+}
+/* $$$$$$$$$$$$$$$$$$$   Projetos $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.projetos{
+    height: auto;
+    width: 100vw;
+    background-color: whitesmoke;
+}
+
+.titulo-projetos{
+    padding: 0.5em;
+    text-align: center;
+    color: rgb(17, 9, 9);
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-style: normal;
+    padding-bottom: 2em;
+}
+
+.projetos .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 48px - 8em);
+    gap: 8em;
+}
+
+.projetos figure{
+    text-align: center;
+}
+
+.projetos figcaption{
+    text-align: center;
+    color: rgb(17, 9, 9);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.imagem-projeto{
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
+    object-fit: left bottom;
+    transition: 500ms;
+    box-shadow: 9px 9px 9px rgba(50, 50, 50, 0.77);
+    filter: grayscale(100%);
+
+}
+
+.imagem-projeto:hover{
+    transform: scale(1.2);
+    filter: none;
+}
+
+.grid:nth-last-child(1){
+    padding-bottom: 1.5em;
+}
+
+/******************************* Contato  ********************************* */
+
+.contato{
+
+    height: 100vh;
+    width: 100vw;
+    background-color: #c31f1e;
+}
+
+.contato-titulo{
+    padding: 0.5em;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-style: normal;
+    padding-bottom: 2em;
+}
+
+/* ------------------------MEDIA QUERIES ---------------------------------------*/
+
+@media(max-width: 1200px){
+    
+    .menu{
+        
+        width: 100vw;
+        height: 5vh;
+        font-size: 1.2em;
+    }
+    .menu ul{
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+        height: inherit;
+        font-weight: bolder;
+    }
+
+    .menu a{
+        padding: 8px 30px;
+    }
+
+    /* .imagem-fundo{
+        width: 100vw;
+        background-image: url("../img/277.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    } */
+
+    /* .titulos-principal{
+        position: absolute;
+        top: 31.5vh;
+        right: 34vw;
+        width:32vw;
+        padding: 0.7em;
+        background-color: rgba(56, 10, 24, 0.8);
+        border: solid 3px rgb(33, 10, 6);
+        font-size: 1em;
+    } */
+
+    .perfil{
+        /* position: absolute; */
+        top: 100vh;
+    }
+
+    .lista-perfil{
+        width: 25vw;
+    }
+}
+
+@media(max-width: 1035px){
+    
+    .menu{
+        
+        width: 100vw;
+        height: 5vh;
+        font-size: 1.2em;
+
+    }
+    .menu ul{
+        padding-top: 0.4em;
+        height: inherit;
+        font-weight: bolder;
+        padding-bottom: 0.4em;
+    }
+
+
+    /* .titulos-principal{
+        position: absolute;
+        top: 31.5vh;
+        height: 30vh;
+        width:vw;
+        padding: 0.7em;
+        font-size: 0.7em;
+    } */
+
+    .perfil{
+        /* position: absolute; */
+        top: 70vh;
+    }
+
+    .lista-perfil{
+        width: 25vw;
+    }
+
+
+    .projetos .grid{
+        grid-template-columns: repeat(2, 240px);
+        gap: 7em;
+        height: auto;
+    }
+
+    .titulo-projetos{
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
+
+    .ultima-fig-projeto{
+        padding-bottom: 1em;
+    }
+}
+
+@media(max-width: 600px){
+    
+    .menu{
+        
+        width: 100vw;
+        height: 5vh;
+        font-size: 1em;
+    }
+    .menu ul{
+        padding-top: 0.4em;
+        height: inherit;
+        font-weight: bolder;
+    }
+
+    .menu a{
+        padding: 10px;
+    }
+
+    /* .titulos-principal{
+        top: 31.5vh;
+        height: 30vh;
+        width:70vw;
+        padding: 0.7em;
+    }
+
+    .site-title{
+        padding-top: 5vh;
+        font-size: 2.5em;
+    }
+
+    .site-subtitle{
+        font-size: 1.1em;
+        padding-right: 1em;
+        letter-spacing: 3px;
+    } */
+
+    .perfil{
+        top: 60vh;
+    }
+
+    .titulo-perfil{
+        font-size: 2em;
+    }
+
+    .imagem-perfil{
+        height: 100px;
+        width: 100px;
+    }
+
+    .paragrafo-perfil, .lista-perfil{
+        font-size: 1.1em;
+    }
+
+    .lista-perfil{
+        width: 25vw;
+    }
+    
+    .projetos .grid{
+        display: block;
+        gap: 2em;
+        height: auto;
+    }
+
+    .titulo-projetos{
+        padding-bottom: 1em;
+    }
+
+    .grid figcaption{
+        padding-bottom: 2em;
+    }
+
+    .grid:nth-last-child(1){
+        padding-bottom: 0;
+    }
+
+    @media(max-width: 564px){
+        .titulos-principal{
+            width:79vw;
+        }
+    
+        .site-title{
+            font-size: 2.7em;
+        }
+    
+        .site-subtitle{
+            font-size: 1em;
+            letter-spacing: 2.5px;
+        }
+
+    @media(max-width: 460px){
+        .titulos-principal{
+            width:79vw;
+        }
+    
+        .site-title{
+            font-size: 2.7em;
+        }
+    
+        .site-subtitle{
+            font-size: 0.9em;
+            letter-spacing: 2.5px;
+        }
+
+    @media(max-width: 400px){
+        .titulos-principal{
+            width:80vw;
+        }
+    
+        .site-title{
+            font-size: 2.3em;
+        }
+    
+        .site-subtitle{
+            font-size: 0.9em;
+            letter-spacing: 1.5px;
+        }
+    }
+
+}
+
+
