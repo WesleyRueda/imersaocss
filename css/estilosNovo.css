@@ -275,8 +275,8 @@ body{
     }
 
     .titulo-projetos{
-        padding-top: 2em;
-        padding-bottom: 2em;
+        padding-top: 0.7em;
+        padding-bottom: 1em;
     }
 
     .projetos figcaption{
@@ -342,6 +342,7 @@ body{
         gap: 1em;
         height: auto;
         padding-top: 0em;
+        padding-bottom: 0em;
     }
 
     .imagem-projeto{
@@ -399,6 +400,7 @@ body{
     }
 
     .titulo-projetos{
+        padding-top: 0.5em;
         padding-bottom: 1em;
     }
 
