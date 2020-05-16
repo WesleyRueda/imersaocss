@@ -17,13 +17,13 @@ body{
 }
 
 .menu{
-    background-color: rgb(41, 13, 13);
+    background-color: whitesmoke; 
     position: fixed;
     top: 0%;
     width: 100%;
     height: 6vh;
     font-size: 1.2em;
-    border-bottom: solid 2px whitesmoke;
+    border-bottom: solid 2px rgb(41, 13, 13);
     z-index: 999;
 }
 
@@ -42,14 +42,14 @@ body{
 }
 
 .menu a{
-    color: whitesmoke;
+    color:rgb(41, 13, 13); 
     text-decoration: none;
-    padding: 13px;
+    letter-spacing: 3px;
 }
 
 .menu a:hover{
     color: #c31f1e;
-    background-color: whitesmoke;
+    border-bottom: 3px solid #c31f1e;
     transition: 500ms;    
 }
 
@@ -72,6 +72,11 @@ body{
     color: #c31f1e;
 }
 
+.sobrenome{
+    color:rgb(41, 13, 13);
+    font-weight: 300;
+}
+
 .site-title{
     padding-right: 0.5em;
     padding-left: 0.5em;
@@ -84,7 +89,11 @@ body{
     padding-left: 1.7em;
     letter-spacing: 5px;
     font-family: "Montserrat", sans-serif;
-    font-weight: lighter;
+}
+
+.profissao, .senioridade{
+    font-weight: 300;
+    color: rgb(41, 13, 13);
 }
 
 
@@ -92,13 +101,13 @@ body{
 .perfil{
     height: auto;
     width: 100%;
-    background-color: rgb(17, 9, 9);
+    background-color: whitesmoke;
 }
 
 .titulo-perfil{
-    padding: 0.5em;
+    padding-top: 1.4em;
     text-align: center;
-    color: whitesmoke;
+    color: rgb(41, 13, 13);
     font-size: 3em;
     letter-spacing: 5px;
     font-style: normal;
@@ -106,10 +115,14 @@ body{
 
 .paragrafo-perfil, .lista-perfil{
     font-size: 1.4em;
-    color: whitesmoke;
-    text-align: left;
+    text-align: justify;
     line-height: 2em;
-    margin: 0 0.5em 0 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.paragrafo-perfil{
+    color: rgb(41, 13, 13);
 }
 
 .lista-perfil{
@@ -133,14 +146,13 @@ body{
 }
 
 .paragrafo-perfil{
-    padding-top: 1em;
+    font-weight: 300;
 }
 
 .imagem-perfil {
-    margin: 0.7em;
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
+    padding-top: 2em;
+    height: 200px;
+    width: 200px;
     object-fit:cover;
     object-position: center;
 }
@@ -153,7 +165,8 @@ body{
 }
 
 .titulo-projetos{
-    padding: 1em;
+    padding-top: 0.7em;
+    padding-bottom: 2em;
     text-align: center;
     color: rgb(17, 9, 9);
     font-size: 3em;
@@ -208,19 +221,35 @@ body{
 
 .contato{
 
-    height: 100vh;
+    height: auto;
     width: 100%;
     background-color: #c31f1e;
 }
 
 .contato-titulo{
-    padding: 0.5em;
+    padding-top: 0.5em;
     text-align: center;
     color: whitesmoke;
     font-size: 3em;
     letter-spacing: 5px;
     font-style: normal;
-    padding-bottom: 2em;
+}
+
+.grid-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato a {
+    color: whitesmoke;
+    font-size: 4em;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+.contato a:hover{
+    text-shadow: 0px 0px 10px whitesmoke;
 }
 
 /* ------------------------MEDIA QUERIES --------------------------------------- */
@@ -234,9 +263,6 @@ body{
         font-size: 2.3em;
     }
 
-    .menu a{
-        padding: 24px;
-    }
 }
 
 @media(min-width: 1680px){
@@ -248,9 +274,6 @@ body{
         font-size: 2em;
     }
 
-    .menu a{
-        padding: 22px;
-    }
 }
 
 @media(min-width: 1440px){
@@ -262,9 +285,6 @@ body{
         font-size: 1.7em;
     }
 
-    .menu a{
-        padding: 13px;
-    }
 }
 
 @media(max-width: 1200px){
@@ -280,10 +300,6 @@ body{
         padding-bottom: 0.4em;
         height: inherit;
         font-weight: bolder;
-    }
-
-    .menu a{
-        padding: 7px;
     }
 
     .perfil{
@@ -328,6 +344,11 @@ body{
     .imagem-projeto{
         height: 35vh;
         width: 35vw;
+        margin-bottom: 1.5em;
+    }
+
+    .grid figcaption{
+        margin-bottom: 2em;
     }
 
     .titulo-projetos{
@@ -355,7 +376,7 @@ body{
     }
 
     .menu a{
-        padding: 9px;
+        padding: 0.1em;
     }
 
     .perfil{
@@ -364,11 +385,6 @@ body{
 
     .titulo-perfil{
         font-size: 2em;
-    }
-
-    .imagem-perfil{
-        height: 100px;
-        width: 100px;
     }
 
     .paragrafo-perfil, .lista-perfil{
@@ -389,7 +405,7 @@ body{
     }
 
     .grid figcaption{
-        padding-bottom: 2em;
+        margin-bottom: 1.5em;
     }
 
     .grid:nth-last-child(1){
@@ -397,15 +413,15 @@ body{
     }
 
     .projetos .grid{
-        grid-template-columns: repeat(1, 240px);
+        grid-template-columns: repeat(1, 95%);
         height: auto;
         }
 
     .imagem-projeto{
-        height: 35vh;
-        width: 240px;
-        } 
+        width: 95%;
     }
+ 
+}
 
     @media(max-width: 553px){
     .site-title{
